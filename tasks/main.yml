@@ -1,0 +1,4 @@
+---
+- name: "Ensure {{ cron_package }} is installed"
+  pacman: "name={{ cron_package }} state=present"
+  when: "cron_package != ''"
